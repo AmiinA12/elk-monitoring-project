@@ -1,0 +1,101 @@
+timestamp,level,service,user_id,action,message,ip_address,response_time_ms
+2025-12-06T11:02:12.119343,ERROR,user-service,e79b9ff7-9e30-42b9-9592-8b62d95b9a4c,view_product,User e79b9ff7-9e30-42b9-9592-8b62d95b9a4c performed view_product - Failed due to Republican century land.,160.44.73.227,294
+2025-12-08T20:44:12.123641,INFO,auth-service,1182f982-9582-46fd-8b88-5485c574eafd,payment_processed,User 1182f982-9582-46fd-8b88-5485c574eafd performed payment_processed,191.246.154.249,53
+2025-12-06T05:43:12.123701,INFO,auth-service,ed9b3c0b-ea0d-4d49-b984-4fcbc2072219,logout,User ed9b3c0b-ea0d-4d49-b984-4fcbc2072219 performed logout,111.223.106.214,187
+2025-12-09T14:55:12.123737,WARNING,inventory-service,ce8f26e9-c9f8-4646-8a58-87ef2e6185de,add_to_cart,User ce8f26e9-c9f8-4646-8a58-87ef2e6185de performed add_to_cart,71.9.133.197,91
+2025-12-05T08:20:12.123767,INFO,auth-service,061fd8f1-dccf-4cd6-b276-04f1c64b7ea1,logout,User 061fd8f1-dccf-4cd6-b276-04f1c64b7ea1 performed logout,185.127.175.231,77
+2025-12-08T20:25:12.123798,INFO,inventory-service,37325674-6524-45ae-8bf3-4a97935860fd,payment_processed,User 37325674-6524-45ae-8bf3-4a97935860fd performed payment_processed,50.225.150.67,114
+2025-12-11T00:45:12.123826,INFO,inventory-service,f149f1b6-d669-4920-8e45-ebb089f04a08,logout,User f149f1b6-d669-4920-8e45-ebb089f04a08 performed logout,173.53.1.63,300
+2025-12-08T15:26:12.123852,WARNING,user-service,14fab33f-5f80-4c65-bf97-c64ec088e676,view_product,User 14fab33f-5f80-4c65-bf97-c64ec088e676 performed view_product,177.190.84.235,57
+2025-12-10T00:42:12.123878,INFO,inventory-service,a977acc5-3007-4a17-bd6d-023c3ce6738d,payment_processed,User a977acc5-3007-4a17-bd6d-023c3ce6738d performed payment_processed,167.31.7.231,99
+2025-12-09T05:36:12.123905,WARNING,user-service,a382cc9e-d388-41d0-9bb6-831be4044779,add_to_cart,User a382cc9e-d388-41d0-9bb6-831be4044779 performed add_to_cart,63.192.144.143,429
+2025-12-05T13:24:12.123931,INFO,payment-service,5715e375-d25a-4190-928e-264846429a1b,logout,User 5715e375-d25a-4190-928e-264846429a1b performed logout,18.106.194.4,36
+2025-12-11T18:03:12.123957,DEBUG,payment-service,9924d5a3-8e94-43c9-9b35-78cf47b793bb,payment_processed,User 9924d5a3-8e94-43c9-9b35-78cf47b793bb performed payment_processed,161.108.50.12,455
+2025-12-10T03:32:12.123983,DEBUG,payment-service,ddb7ac04-f98a-4b1e-a4c1-3cf234289a7f,login,User ddb7ac04-f98a-4b1e-a4c1-3cf234289a7f performed login,103.22.196.71,219
+2025-12-06T17:23:12.124009,INFO,notification-service,122bc730-8602-4886-a294-f9d5253aada1,payment_processed,User 122bc730-8602-4886-a294-f9d5253aada1 performed payment_processed,13.35.74.93,243
+2025-12-09T05:38:12.124035,DEBUG,payment-service,0ca869ff-8c76-4dda-993d-2bb5a8d08607,view_product,User 0ca869ff-8c76-4dda-993d-2bb5a8d08607 performed view_product,149.76.106.18,69
+2025-12-11T13:57:12.124060,INFO,user-service,4bdce4ba-e140-4dad-a749-2a684ee914ab,payment_processed,User 4bdce4ba-e140-4dad-a749-2a684ee914ab performed payment_processed,1.136.196.230,187
+2025-12-09T10:44:12.124086,INFO,auth-service,84891681-e28e-4da8-815f-290508a1608a,checkout,User 84891681-e28e-4da8-815f-290508a1608a performed checkout,219.98.234.185,346
+2025-12-06T05:57:12.124112,DEBUG,notification-service,8c6d0e96-6238-4d76-9110-41b087f9d46d,payment_processed,User 8c6d0e96-6238-4d76-9110-41b087f9d46d performed payment_processed,118.7.48.243,383
+2025-12-11T17:03:12.124138,INFO,auth-service,46c7a590-b049-418b-9d2b-ee3267607480,login,User 46c7a590-b049-418b-9d2b-ee3267607480 performed login,28.219.72.94,443
+2025-12-08T19:17:12.124163,INFO,payment-service,cc97892b-f953-4ad9-9207-5da4f2cd4956,payment_failed,User cc97892b-f953-4ad9-9207-5da4f2cd4956 performed payment_failed,33.38.205.217,334
+2025-12-07T02:40:12.124188,INFO,user-service,56cd67ac-25e4-4554-9793-867ad466906f,login,User 56cd67ac-25e4-4554-9793-867ad466906f performed login,85.88.175.175,137
+2025-12-10T17:47:12.124213,DEBUG,user-service,41ddf637-ed8f-45c2-85a8-4cd9b49640be,add_to_cart,User 41ddf637-ed8f-45c2-85a8-4cd9b49640be performed add_to_cart,143.186.50.67,145
+2025-12-09T17:49:12.124238,INFO,notification-service,bd0cf008-bc5d-4348-8ca1-ef44ad7487e4,checkout,User bd0cf008-bc5d-4348-8ca1-ef44ad7487e4 performed checkout,131.16.50.72,233
+2025-12-11T08:26:12.124263,WARNING,notification-service,952ca336-ac62-4760-9ac8-25cd05d2b5ef,add_to_cart,User 952ca336-ac62-4760-9ac8-25cd05d2b5ef performed add_to_cart,105.90.39.88,22
+2025-12-06T23:59:12.124288,WARNING,user-service,8767f522-7dc5-4290-aff9-69034e7eb27f,login,User 8767f522-7dc5-4290-aff9-69034e7eb27f performed login,20.247.115.166,245
+2025-12-05T06:37:12.124314,INFO,payment-service,bcafd121-9ae9-4e42-be71-2b8874e1ab73,payment_processed,User bcafd121-9ae9-4e42-be71-2b8874e1ab73 performed payment_processed,41.31.97.110,25
+2025-12-11T20:01:12.124339,DEBUG,auth-service,5cbf31ba-18dd-490d-ad5d-d4ccd8a1527c,logout,User 5cbf31ba-18dd-490d-ad5d-d4ccd8a1527c performed logout,215.66.98.203,484
+2025-12-09T08:22:12.124365,INFO,notification-service,a6c6ff1e-0525-4b59-8740-f4ccf84c7f7a,checkout,User a6c6ff1e-0525-4b59-8740-f4ccf84c7f7a performed checkout,140.191.35.144,140
+2025-12-11T00:16:12.124391,WARNING,notification-service,13ce41bf-a54e-4fad-beda-42286dbab69d,payment_processed,User 13ce41bf-a54e-4fad-beda-42286dbab69d performed payment_processed,134.254.76.192,413
+2025-12-05T10:44:12.124417,INFO,payment-service,f7f724c7-a0cf-4ff1-ba8a-3635a31e29e4,checkout,User f7f724c7-a0cf-4ff1-ba8a-3635a31e29e4 performed checkout,178.2.122.115,317
+2025-12-07T22:41:12.124442,WARNING,notification-service,179ed3fd-c21f-4d60-a1fa-cfe3e60c6358,checkout,User 179ed3fd-c21f-4d60-a1fa-cfe3e60c6358 performed checkout,214.203.197.30,333
+2025-12-07T20:37:12.124467,DEBUG,user-service,fbb2a3d6-35b5-407e-8bca-84c5ae4cc1f0,checkout,User fbb2a3d6-35b5-407e-8bca-84c5ae4cc1f0 performed checkout,59.6.167.66,163
+2025-12-09T15:21:12.124492,WARNING,notification-service,4a6c7894-acba-47af-a72f-1d9d79229030,payment_processed,User 4a6c7894-acba-47af-a72f-1d9d79229030 performed payment_processed,218.151.235.55,327
+2025-12-10T18:48:12.124517,ERROR,auth-service,d5753195-2778-455b-b086-a89b9977a883,add_to_cart,User d5753195-2778-455b-b086-a89b9977a883 performed add_to_cart - Failed due to Reduce cause ago expect defense five.,166.58.153.112,200
+2025-12-05T02:44:12.124572,INFO,payment-service,0a6f4a18-8c5a-4b3e-98e5-605d39f67d7b,view_product,User 0a6f4a18-8c5a-4b3e-98e5-605d39f67d7b performed view_product,150.18.208.199,336
+2025-12-06T22:04:12.124601,INFO,notification-service,466acd7c-32b1-4413-979f-4ab8f4a839d1,view_product,User 466acd7c-32b1-4413-979f-4ab8f4a839d1 performed view_product,197.53.33.81,60
+2025-12-06T10:28:12.124628,INFO,inventory-service,64ca5f68-37ac-46e3-9615-5ecb180aca22,payment_processed,User 64ca5f68-37ac-46e3-9615-5ecb180aca22 performed payment_processed,81.158.232.178,23
+2025-12-10T02:20:12.124658,INFO,inventory-service,dac6920e-4cb8-4f91-8b20-7c104005e68a,payment_processed,User dac6920e-4cb8-4f91-8b20-7c104005e68a performed payment_processed,88.180.27.153,195
+2025-12-10T20:53:12.124708,INFO,user-service,1c761356-b468-420d-ae01-5c5d66db3001,add_to_cart,User 1c761356-b468-420d-ae01-5c5d66db3001 performed add_to_cart,99.81.186.189,191
+2025-12-07T01:05:12.124746,INFO,user-service,656ed77f-00ae-4506-99ef-a9d54c1cd9c9,logout,User 656ed77f-00ae-4506-99ef-a9d54c1cd9c9 performed logout,125.143.106.8,496
+2025-12-10T18:38:12.124776,INFO,auth-service,aa76bff9-1cdf-4d42-9b88-9df401d6796b,payment_failed,User aa76bff9-1cdf-4d42-9b88-9df401d6796b performed payment_failed,140.32.104.32,404
+2025-12-06T00:16:12.124804,DEBUG,payment-service,657f0d44-dde0-4802-9577-b46ec5f14b15,add_to_cart,User 657f0d44-dde0-4802-9577-b46ec5f14b15 performed add_to_cart,135.37.67.113,399
+2025-12-07T19:44:12.124830,ERROR,payment-service,f5d41156-e524-4326-8f09-a87da6753c47,view_product,User f5d41156-e524-4326-8f09-a87da6753c47 performed view_product - Failed due to Peace for off western study.,140.67.147.34,127
+2025-12-09T10:18:12.124874,INFO,payment-service,6569c4f6-691f-4f18-94ca-768c12a055da,view_product,User 6569c4f6-691f-4f18-94ca-768c12a055da performed view_product,103.92.13.15,454
+2025-12-09T09:28:12.124905,DEBUG,payment-service,94d46209-c6e9-490a-a645-2980df2641db,payment_processed,User 94d46209-c6e9-490a-a645-2980df2641db performed payment_processed,38.158.188.75,277
+2025-12-11T09:12:12.124932,INFO,auth-service,97627a81-33a0-4fec-9f13-5afafe623917,payment_processed,User 97627a81-33a0-4fec-9f13-5afafe623917 performed payment_processed,104.19.143.218,96
+2025-12-07T01:39:12.124958,INFO,inventory-service,1dfabedd-0d9f-4468-a11e-1d60d353e1be,payment_processed,User 1dfabedd-0d9f-4468-a11e-1d60d353e1be performed payment_processed,97.211.87.160,144
+2025-12-08T00:49:12.124985,INFO,user-service,8fbc9842-b559-4023-a016-8da9152a929d,checkout,User 8fbc9842-b559-4023-a016-8da9152a929d performed checkout,35.69.84.187,59
+2025-12-11T03:25:12.125012,ERROR,notification-service,c33f8eab-2112-4d7f-8efa-176ce1f7b228,payment_failed,User c33f8eab-2112-4d7f-8efa-176ce1f7b228 performed payment_failed - Failed due to Provide money themselves top.,195.221.86.187,233
+2025-12-11T13:59:12.125053,INFO,user-service,e9cf6fe4-b3bb-493d-b6d6-1d1d054786f1,login,User e9cf6fe4-b3bb-493d-b6d6-1d1d054786f1 performed login,128.111.250.52,130
+2025-12-09T22:39:12.125080,ERROR,auth-service,ecb7be98-b39e-4c72-ab2e-a306befbc3ef,checkout,User ecb7be98-b39e-4c72-ab2e-a306befbc3ef performed checkout - Failed due to Major voice throughout main language follow.,126.28.4.25,398
+2025-12-11T14:49:12.125115,WARNING,user-service,865095fe-9304-452b-aaa1-7912b2bc6e53,payment_failed,User 865095fe-9304-452b-aaa1-7912b2bc6e53 performed payment_failed,37.0.79.208,409
+2025-12-09T10:04:12.125143,WARNING,payment-service,1120c33e-8919-44d5-81c2-04fb92b32d6e,payment_processed,User 1120c33e-8919-44d5-81c2-04fb92b32d6e performed payment_processed,123.179.221.122,143
+2025-12-05T18:38:12.125169,ERROR,user-service,062e731b-fd3e-4dd4-a7bb-e6a8961cf98d,payment_failed,User 062e731b-fd3e-4dd4-a7bb-e6a8961cf98d performed payment_failed - Failed due to Mention human big any lawyer world system.,97.238.214.186,383
+2025-12-07T23:33:12.125203,WARNING,auth-service,9b63118b-2af9-4b48-8366-e7665b1c28cf,logout,User 9b63118b-2af9-4b48-8366-e7665b1c28cf performed logout,219.172.96.4,281
+2025-12-05T03:35:12.125229,INFO,notification-service,bb330516-09a3-4261-8596-32fa6cc60bc8,add_to_cart,User bb330516-09a3-4261-8596-32fa6cc60bc8 performed add_to_cart,19.143.211.241,474
+2025-12-09T07:49:12.125255,DEBUG,notification-service,fb56082a-1da1-4377-933a-3569b6326a9b,login,User fb56082a-1da1-4377-933a-3569b6326a9b performed login,184.76.16.205,187
+2025-12-11T11:32:12.125281,DEBUG,notification-service,4ff71921-641e-4daf-a92b-b938310d291a,checkout,User 4ff71921-641e-4daf-a92b-b938310d291a performed checkout,14.95.134.133,443
+2025-12-05T16:52:12.125307,WARNING,notification-service,03637d20-530d-4416-ba2f-965057ba82de,login,User 03637d20-530d-4416-ba2f-965057ba82de performed login,108.84.172.196,243
+2025-12-05T07:39:12.125332,INFO,notification-service,bdfe6e78-97ff-49f9-b07d-1779740685fe,payment_processed,User bdfe6e78-97ff-49f9-b07d-1779740685fe performed payment_processed,162.23.47.124,105
+2025-12-11T00:08:12.125357,INFO,inventory-service,0bebcca7-4841-4fbd-b97a-82315708912f,add_to_cart,User 0bebcca7-4841-4fbd-b97a-82315708912f performed add_to_cart,5.0.104.143,463
+2025-12-09T09:16:12.125382,ERROR,notification-service,5042e2b1-735c-4ec2-9889-4fa6ed6e3eb6,checkout,User 5042e2b1-735c-4ec2-9889-4fa6ed6e3eb6 performed checkout - Failed due to Religious from road impact north.,85.249.86.116,260
+2025-12-11T20:08:12.125415,DEBUG,inventory-service,5cdb64b0-4522-4589-a71f-ac84dd08fdaf,payment_failed,User 5cdb64b0-4522-4589-a71f-ac84dd08fdaf performed payment_failed,120.26.247.180,473
+2025-12-09T04:06:12.125441,INFO,inventory-service,fcc91f07-6ea2-41ab-9fd3-47786e09d102,payment_processed,User fcc91f07-6ea2-41ab-9fd3-47786e09d102 performed payment_processed,142.67.117.127,405
+2025-12-06T09:21:12.125467,INFO,auth-service,9210f8b4-7bfe-4128-9f23-a01fc9532eeb,login,User 9210f8b4-7bfe-4128-9f23-a01fc9532eeb performed login,123.232.4.102,227
+2025-12-08T19:11:12.125494,ERROR,user-service,ef064653-484c-4bc3-9cf5-651b6c8847a2,login,User ef064653-484c-4bc3-9cf5-651b6c8847a2 performed login - Failed due to Kind yeah wife look interesting beyond everybody.,66.110.21.78,140
+2025-12-06T02:01:12.125529,ERROR,user-service,6eea4a62-31ed-45e7-8019-f4935079f905,payment_failed,User 6eea4a62-31ed-45e7-8019-f4935079f905 performed payment_failed - Failed due to Something community dog.,221.235.118.169,113
+2025-12-05T19:15:12.125563,WARNING,notification-service,803485e7-b8fc-49ba-b842-0822068ce98d,payment_processed,User 803485e7-b8fc-49ba-b842-0822068ce98d performed payment_processed,123.204.244.175,470
+2025-12-05T06:26:12.125589,WARNING,user-service,f8c5b015-9942-45a4-b708-36183f6ff897,checkout,User f8c5b015-9942-45a4-b708-36183f6ff897 performed checkout,200.62.7.69,489
+2025-12-05T00:11:12.125615,INFO,notification-service,e3650e24-b95e-4336-8dce-37dafedc94d0,login,User e3650e24-b95e-4336-8dce-37dafedc94d0 performed login,101.178.99.83,168
+2025-12-11T09:11:12.125640,WARNING,user-service,8bf0461d-dc55-49f5-99f7-3731e1622bfb,view_product,User 8bf0461d-dc55-49f5-99f7-3731e1622bfb performed view_product,91.84.26.24,477
+2025-12-09T08:57:12.125673,INFO,payment-service,9f8ba06a-e24d-4d57-8790-69ca8aa963e3,login,User 9f8ba06a-e24d-4d57-8790-69ca8aa963e3 performed login,12.247.97.59,321
+2025-12-07T15:28:12.125700,WARNING,user-service,b29dbd97-017a-4922-aa74-d3e5c79ed3d2,payment_processed,User b29dbd97-017a-4922-aa74-d3e5c79ed3d2 performed payment_processed,124.127.117.17,348
+2025-12-09T23:17:12.125725,ERROR,notification-service,b6e92552-841a-4c3c-a6cc-ffe7d959c390,logout,User b6e92552-841a-4c3c-a6cc-ffe7d959c390 performed logout - Failed due to Speak whom network vote event.,23.210.166.246,401
+2025-12-09T17:46:12.125758,INFO,notification-service,272f0941-dcf0-4630-8bb3-f7533190bba0,view_product,User 272f0941-dcf0-4630-8bb3-f7533190bba0 performed view_product,122.103.151.170,41
+2025-12-06T21:49:12.125784,DEBUG,inventory-service,ad09cc8e-7b2a-4347-80d9-de5ecbb9f8d6,add_to_cart,User ad09cc8e-7b2a-4347-80d9-de5ecbb9f8d6 performed add_to_cart,222.22.69.75,74
+2025-12-07T02:15:12.125809,WARNING,inventory-service,04c2f774-c587-42fb-8947-5257d922c0c8,payment_failed,User 04c2f774-c587-42fb-8947-5257d922c0c8 performed payment_failed,173.167.182.130,126
+2025-12-11T14:16:12.125836,DEBUG,auth-service,db06e1d8-c887-476f-8432-9d041162464b,payment_processed,User db06e1d8-c887-476f-8432-9d041162464b performed payment_processed,95.148.165.227,273
+2025-12-11T04:10:12.125860,INFO,inventory-service,c153befe-147e-44fd-9b47-a9b8505c0ec6,checkout,User c153befe-147e-44fd-9b47-a9b8505c0ec6 performed checkout,176.206.187.213,379
+2025-12-07T15:57:12.125885,INFO,notification-service,f866e060-a630-4adc-82e2-baf20f167c9c,payment_failed,User f866e060-a630-4adc-82e2-baf20f167c9c performed payment_failed,19.168.72.129,159
+2025-12-07T08:30:12.125910,DEBUG,user-service,28dc7df3-a3dc-4640-b7d3-f439473e0a6b,payment_processed,User 28dc7df3-a3dc-4640-b7d3-f439473e0a6b performed payment_processed,195.24.116.239,280
+2025-12-09T21:15:12.125935,INFO,user-service,9c3e894a-f124-4dba-aa76-b0e3a1923b04,payment_failed,User 9c3e894a-f124-4dba-aa76-b0e3a1923b04 performed payment_failed,59.251.123.156,366
+2025-12-10T03:37:12.125960,WARNING,inventory-service,38894574-190b-4386-93a2-8926e3cc4f39,logout,User 38894574-190b-4386-93a2-8926e3cc4f39 performed logout,187.87.205.208,296
+2025-12-09T01:28:12.125986,ERROR,notification-service,a4cb0e9f-115c-498b-bbab-2bbae2ec8244,logout,User a4cb0e9f-115c-498b-bbab-2bbae2ec8244 performed logout - Failed due to Become standard low up president front.,11.201.189.253,200
+2025-12-06T01:34:12.126019,DEBUG,payment-service,e9157f65-ebde-4449-bcab-d075eef64a03,payment_processed,User e9157f65-ebde-4449-bcab-d075eef64a03 performed payment_processed,138.141.100.172,137
+2025-12-06T06:39:12.126044,DEBUG,inventory-service,37040750-b3f6-4a37-af6f-d0af06fd8abd,add_to_cart,User 37040750-b3f6-4a37-af6f-d0af06fd8abd performed add_to_cart,27.93.12.135,319
+2025-12-05T09:08:12.126069,WARNING,payment-service,d4640375-eb23-4180-b846-93186394739c,payment_processed,User d4640375-eb23-4180-b846-93186394739c performed payment_processed,16.168.162.28,55
+2025-12-05T02:38:12.126094,DEBUG,payment-service,e8e16478-9537-4903-8860-fe4ca5cf6199,payment_failed,User e8e16478-9537-4903-8860-fe4ca5cf6199 performed payment_failed,77.32.51.152,48
+2025-12-06T08:35:12.126119,INFO,user-service,6e8702fc-321f-4ec8-9a34-3318c4a3c934,login,User 6e8702fc-321f-4ec8-9a34-3318c4a3c934 performed login,124.97.108.11,359
+2025-12-06T07:56:12.126144,INFO,auth-service,ff83ad01-cebd-44bb-ad39-2355af1ecd4d,payment_failed,User ff83ad01-cebd-44bb-ad39-2355af1ecd4d performed payment_failed,140.123.158.33,121
+2025-12-09T06:28:12.126168,WARNING,user-service,e38368aa-11a5-41d4-a422-d5c867ebe210,add_to_cart,User e38368aa-11a5-41d4-a422-d5c867ebe210 performed add_to_cart,119.212.136.70,62
+2025-12-09T11:31:12.126193,INFO,payment-service,1de6e3ab-deb5-404d-b8e7-6097a1580764,payment_failed,User 1de6e3ab-deb5-404d-b8e7-6097a1580764 performed payment_failed,55.20.148.104,294
+2025-12-05T14:59:12.126221,DEBUG,inventory-service,c52da614-412b-4742-983e-5ad5231fe17a,payment_failed,User c52da614-412b-4742-983e-5ad5231fe17a performed payment_failed,175.2.165.195,416
+2025-12-06T14:22:12.126246,INFO,notification-service,13a6eac2-6314-485a-868d-de1e6b820aee,payment_processed,User 13a6eac2-6314-485a-868d-de1e6b820aee performed payment_processed,131.90.221.236,312
+2025-12-07T12:26:12.126271,INFO,payment-service,a7ef7ba9-357e-483c-9ba1-c0f0bfb32220,login,User a7ef7ba9-357e-483c-9ba1-c0f0bfb32220 performed login,41.169.205.154,159
+2025-12-06T03:58:12.126296,INFO,payment-service,f9fdeef9-7e34-4821-8aaa-86f237b65ca8,login,User f9fdeef9-7e34-4821-8aaa-86f237b65ca8 performed login,119.199.101.64,466
+2025-12-08T08:25:12.126320,WARNING,notification-service,e5580ce7-99dd-4b1f-b580-93630e2b4cf5,login,User e5580ce7-99dd-4b1f-b580-93630e2b4cf5 performed login,4.91.116.233,165
+2025-12-11T19:35:12.126345,ERROR,notification-service,94122251-83fc-4816-ae72-f095f8ca86e8,logout,User 94122251-83fc-4816-ae72-f095f8ca86e8 performed logout - Failed due to Industry full bag small reduce.,141.188.64.166,287
+2025-12-06T09:25:12.126377,DEBUG,inventory-service,61808923-9842-4840-aea9-16b8ec09adc3,payment_processed,User 61808923-9842-4840-aea9-16b8ec09adc3 performed payment_processed,197.106.229.38,222
+2025-12-11T06:41:12.126403,DEBUG,user-service,8e6d22f8-b2b0-45fe-993d-c279d7fcb458,logout,User 8e6d22f8-b2b0-45fe-993d-c279d7fcb458 performed logout,151.244.220.4,324

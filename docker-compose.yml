@@ -1,0 +1,120 @@
+version: '3.8'
+
+services:
+  # Elasticsearch: Moteur de recherche et d'indexation
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.0
+    container_name: elk_elasticsearch
+    environment:
+      - node.name=elasticsearch
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - elk
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -s http://localhost:9200 >/dev/null || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Logstash: Ingestion et traitement des logs
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.17.0
+    container_name: elk_logstash
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+      - ./data/uploads:/usr/share/logstash/data/uploads:ro
+    ports:
+      - "5044:5044"
+      - "5000:5000/tcp"
+      - "5000:5000/udp"
+      - "9700:9600"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+  # Kibana: Visualisation des données
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.0
+    container_name: elk_kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -s http://localhost:5601/api/status | grep -q 'available' || exit 1" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # MongoDB: Stockage des métadonnées
+  mongodb:
+    image: mongo:5.0
+    container_name: elk_mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin123
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - elk
+
+  # Redis: Cache et file d'attente
+  redis:
+    image: redis:6.2-alpine
+    container_name: elk_redis
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - elk
+
+  # Application Web (Flask)
+  webapp:
+    build:
+      context: ./webapp
+    container_name: elk_webapp
+    volumes:
+      - ./webapp:/app
+      - ./data:/app/data
+    ports:
+      - "8000:8000"
+    environment:
+      - FLASK_ENV=development
+      - ELASTICSEARCH_HOST=elasticsearch
+      - MONGO_HOST=mongodb
+      - REDIS_HOST=redis
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+      - mongodb
+      - redis
+
+networks:
+  elk:
+    driver: bridge
+
+volumes:
+  elasticsearch_data:
+  mongodb_data:
+  redis_data:

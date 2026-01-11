@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block title %}Search - ELK Monitoring{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col">
+            <h1 class="display-4">
+                <i class="bi bi-search"></i> Recherche de Logs
+            </h1>
+            <p class="lead text-muted">Recherchez et filtrez vos logs</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form id="searchForm">
+                        <!-- Text Search -->
+                        <div class="mb-3">
+                            <label for="searchQuery" class="form-label">Recherche en texte libre</label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                <input type="text" class="form-control" id="searchQuery"
+                                    placeholder="Rechercher dans les logs...">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!-- Level Filter -->
+                            <div class="col-md-4 mb-3">
+                                <label for="levelFilter" class="form-label">Niveau</label>
+                                <select class="form-select" id="levelFilter">
+                                    <option value="">Tous</option>
+                                    <option value="INFO">INFO</option>
+                                    <option value="WARNING">WARNING</option>
+                                    <option value="ERROR">ERROR</option>
+                                    <option value="DEBUG">DEBUG</option>
+                                </select>
+                            </div>
+
+                            <!-- Service Filter -->
+                            <div class="col-md-4 mb-3">
+                                <label for="serviceFilter" class="form-label">Service</label>
+                                <select class="form-select" id="serviceFilter">
+                                    <option value="">Tous</option>
+                                    <option value="payment-service">Payment Service</option>
+                                    <option value="inventory-service">Inventory Service</option>
+                                    <option value="user-service">User Service</option>
+                                    <option value="auth-service">Auth Service</option>
+                                    <option value="notification-service">Notification Service</option>
+                                </select>
+                            </div>
+
+                            <!-- Date Range -->
+                            <div class="col-md-4 mb-3">
+                                <label for="dateRange" class="form-label">Période</label>
+                                <select class="form-select" id="dateRange">
+                                    <option value="1h">Dernière heure</option>
+                                    <option value="24h" selected>Dernières 24h</option>
+                                    <option value="7d">7 derniers jours</option>
+                                    <option value="30d">30 derniers jours</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg flex-grow-1">
+                                <i class="bi bi-search"></i> Rechercher
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg" id="resetBtn">
+                                <i class="bi bi-arrow-counterclockwise"></i> Réinitialiser
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Recent Searches -->
+            <div class="card mt-4 mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="bi bi-clock-history"></i> Recherches Récentes</h5>
+                </div>
+                <div class="card-body">
+                    <div id="searchHistory" class="list-group list-group-flush">
+                        <div class="text-muted text-center">Chargement...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            <div class="card mt-4" id="resultsCard" style="display: none;">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">
+                        <i class="bi bi-list-ul"></i> Résultats
+                        <span class="badge bg-primary" id="resultCount">0</span>
+                    </h5>
+                    <button class="btn btn-sm btn-outline-success" id="exportBtn">
+                        <i class="bi bi-download"></i> Export CSV
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div id="loadingSpinner" class="text-center py-5 d-none">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Chargement...</span>
+                        </div>
+                        <p class="mt-2 text-muted">Recherche en cours...</p>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="resultsTable">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Niveau</th>
+                                    <th>Service</th>
+                                    <th>Message</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultsBody">
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav>
+                        <ul class="pagination justify-content-center" id="pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detail Modal -->
+<div class="modal fade" id="logDetailModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Détails du Log</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <pre id="logDetailContent" class="bg-light p-3 rounded"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/search.js') }}"></script>
+{% endblock %}

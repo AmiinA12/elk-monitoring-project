@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Upload - ELK Monitoring{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h1 class="display-4">
+                <i class="bi bi-cloud-upload"></i> Upload de Logs
+            </h1>
+            <p class="lead text-muted">Importez vos fichiers CSV ou JSON</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <div class="mb-4">
+                            <div class="drop-zone" id="dropZone">
+                                <i class="bi bi-cloud-upload fs-1 text-primary"></i>
+                                <p class="mt-3 mb-2">Glissez-déposez vos fichiers ici</p>
+                                <p class="text-muted small">ou cliquez pour sélectionner</p>
+                                <input type="file" id="fileInput" name="file" accept=".csv,.json" class="d-none"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div id="fileInfo" class="alert alert-info d-none">
+                            <i class="bi bi-file-earmark"></i>
+                            <strong>Fichier sélectionné:</strong> <span id="fileName"></span>
+                            <span class="badge bg-secondary ms-2" id="fileSize"></span>
+                        </div>
+
+                        <div id="uploadProgress" class="d-none mb-3">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    id="progressBar" style="width: 0%">0%</div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100" id="uploadBtn">
+                            <i class="bi bi-upload"></i> Uploader
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Recent Uploads -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="bi bi-clock-history"></i> Fichiers Récemment Uploadés</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Nom du Fichier</th>
+                                    <th>Date</th>
+                                    <th>Taille</th>
+                                    <th>Statut</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recentUploads">
+                                <tr>
+                                    <td colspan="4" class="text-center text-muted">Aucun fichier uploadé</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+{% endblock %}

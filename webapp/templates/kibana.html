@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Kibana - ELK Monitoring{% endblock %}
+
+{% block content %}
+<div class="container-fluid p-0">
+    <iframe src="http://localhost:5601/app/dashboards#/view/9e187b90-d6d8-11f0-affe-c9aeb1f103ce" width="100%"
+        height="900" frameborder="0"></iframe>
+</div>
+{% endblock %}
